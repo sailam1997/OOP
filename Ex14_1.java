@@ -2,15 +2,14 @@ import java.util.Scanner;
 
 public class Ex14_1 {
     public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle();
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the width :");
-        rectangle.setWidth(scanner.nextDouble());
-        System.out.print("Enter the height :");
-        rectangle.setHeight(scanner.nextDouble());
-        System.out.println("Your Rectangle \n "+ rectangle.display());
-        System.out.println("Perimeter of the Rectangle :" +rectangle.getPerimeter());
-        System.out.println("Area of the Rectangle :" +rectangle.getArea());
+        Rectangle rectangle1 = new Rectangle(4,40);
+        Rectangle rectangle2 = new Rectangle(3.5,35.9);
+        System.out.println("Your Rectangle \n "+ rectangle1.display());
+        System.out.println("Perimeter of the Rectangle :" +rectangle1.getPerimeter());
+        System.out.println("Area of the Rectangle :" +rectangle1.getArea());
+        System.out.println("Your Rectangle \n "+ rectangle2.display());
+        System.out.println("Perimeter of the Rectangle :" +rectangle2.getPerimeter());
+        System.out.println("Area of the Rectangle :" +rectangle2.getArea());
     }
 
 }
